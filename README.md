@@ -1,0 +1,2 @@
+# MyNote
+Notes for scripting
