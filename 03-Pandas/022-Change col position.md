@@ -1,4 +1,6 @@
+修改列的位置
 ```py
 d = df_join_info.pop('Compound_ID')
 df_join_info.insert(0,'Compound_ID', d)
+
 ```
