@@ -1,3 +1,4 @@
+Save in different batches 分批保存
 ```py
 chunk_size = len(df) // 10
 
@@ -28,4 +29,5 @@ for i in range(10):
 
     # 保存文件，例如保存为 CSV 文件
     chunk_df.to_excel(f'huanji_smallMW_AImols_{i+1}.xlsx', index=False)
+
 ```
