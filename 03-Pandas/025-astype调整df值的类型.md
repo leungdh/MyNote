@@ -1,3 +1,0 @@
-```py
-df.astype(float)
-```
