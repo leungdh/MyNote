@@ -1,3 +1,5 @@
+
+用正则表达式筛选df
 ```py
 def filter_by_tail_id(df, tailid, num_c):
     """
@@ -15,5 +17,6 @@ def filter_by_tail_id(df, tailid, num_c):
     # 筛选符合条件的行
     filtered_df = df[df['Tail_ID'].str.contains(pattern, regex=True, na=False)]
     return filtered_df
+
 
 ```
