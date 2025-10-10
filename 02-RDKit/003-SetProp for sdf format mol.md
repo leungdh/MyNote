@@ -1,6 +1,7 @@
 
 
 ## 设置属性：mol.SetProp
+为mol设置属性SetProp_Name属性是sdf格式的第一行
 
 ## SetProp
 ```py
@@ -21,4 +22,5 @@ for f in files:
 ## GetProp
 ```py
 molname = mol.GetProp('_Name')
+
 ```
