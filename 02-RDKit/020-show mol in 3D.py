@@ -1,3 +1,4 @@
+show mol in 3D, 分子3D显示
 ```py
 import py3Dmol
 
@@ -13,4 +14,5 @@ def molecule_to_3d(mol, viz_flag=False):
         view.zoomTo()
         display(view)
     return mol
+
 ```
