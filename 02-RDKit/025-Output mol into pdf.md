@@ -1,3 +1,4 @@
+Output mol into pdf 导出pdf分子
 ```py
 def save_pdf(df,dir_in,name,n_repr=350):
     if len(df)>n_repr:
@@ -16,4 +17,5 @@ def save_pdf(df,dir_in,name,n_repr=350):
                                     for index, row in df_showselected.iterrows()])
     display(img)
     img.save(os.path.join(dir_in, name))
+
 ```
