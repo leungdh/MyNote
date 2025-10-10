@@ -1,4 +1,5 @@
-# RDKFP
+# Fetch substructure of FingerPrint 获取指纹的子结构
+## RDKFP
 ```py
 from rdkit import Chem
 from rdkit.Chem.rdFingerprintGenerator import GetRDKitFPGenerator,AdditionalOutput
@@ -20,7 +21,7 @@ i = IPython.display.SVG(fig)
 display(i)
 ```
 
-# ECFP
+## ECFP
 ```py
 from rdkit import Chem
 from rdkit.Chem import Draw, AllChem
@@ -38,5 +39,6 @@ p = Draw.DrawMorganBits(list_bits, molsPerRow=4,legends=legends)
 i = IPython.display.SVG(p)
 display(i)
 ```
+
 
 
