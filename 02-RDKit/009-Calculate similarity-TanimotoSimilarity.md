@@ -1,6 +1,6 @@
 # 计算分子间的相似性-TanimotoSimilarity
 
-## TanimotoSimilarit用法介绍
+## TanimotoSimilarity用法介绍
 ```py
 from rdkit import Chem,DataStructs
 mol1 = Chem.MolFromSmiles("CC(C)C=CCCCCC(=O)NCc1ccc(c(c1)OC)O")
@@ -21,3 +21,4 @@ RDK fingerprint: 0.471502590674
 
 ## ref:
 https://www.researchgate.net/post/How_to_compare_a_set_of_SMILES_structures
+
