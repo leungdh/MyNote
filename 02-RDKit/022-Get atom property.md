@@ -1,3 +1,4 @@
+Get atom property 查看原子性质
 # 看原子的元素
 ```py
 if atom.GetSymbol() == "*":
@@ -8,4 +9,5 @@ if atom.GetSymbol() == "*":
 ```py
 if atom.GetDegree() == 2:
     print('yes')
+
 ```
