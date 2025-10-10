@@ -11,7 +11,7 @@ expand_tails = {}
 
 for name, tailscaf in name2tailscaf.items():  # name2tailscaf is a dict where the keys are tail's name, values are SMILES tails.
     num_tails = len(tailscaf) # 动态计算需要生成的tail数
-    tail_ranges = [range(0, 4)] + [range(0, 10)] * (num_tails - 1)  # 定义subtail的长度范围, from 4 to 10
+    tail_ranges = [range(0, 4)] + [range(0, 10)] * (num_tails - 1)  # 定义subtail的长度范围, the first subtail is from 0 to 3, and the others from 0 to 9 (it actually turns out to be 1-4 and 1-10)
 
     # 使用递归生成所有可能的tail组合
     def generate_tails(index=0, current_tails=[]):
@@ -38,4 +38,5 @@ tail_df.reset_index(inplace = True)
 tail_df.rename(columns = {"index":"Tail_ID"},inplace = True)
 
 ```
+
 
