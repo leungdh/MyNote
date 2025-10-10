@@ -1,4 +1,4 @@
-# 画分子
+# 画分子 Draw molecules
 
 ## 画多个分子 MolsToGridImage
 ```py
@@ -42,4 +42,5 @@ img.save('cluster'+str(num+1)+'.png')
 ```py
 from rdkit.Chem import Draw
 Draw.MolToImageFile(mol,'mol.jpg')
+
 ```
