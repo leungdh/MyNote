@@ -1,3 +1,4 @@
+Add bond in an atom 在一个原子上加键
 ```py
 mol_modified = Chem.MolFromMolFile('mymol.sdf')
 
@@ -19,5 +20,6 @@ mol_modified.AddBond(atom_id,new_atom_id,Chem.BondType.SINGLE)
 mw.AddBond(6,7,Chem.BondType.SINGLE)
 mw.AddBond(7,8,Chem.BondType.DOUBLE)
 ```
+
 
 * ref: https://rdkit.org/docs/GettingStartedInPython.html#editing-molecules
