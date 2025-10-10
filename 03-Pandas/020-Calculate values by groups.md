@@ -1,3 +1,4 @@
+## 分组计算再输出df
 * 分组计算组内有多少个唯一的脂质
 ```py
 df.groupby(['target','dose(mpk)'])['Compound_ID'].nunique().reset_index(name= "lipid_count")
@@ -6,4 +7,5 @@ df.groupby(['target','dose(mpk)'])['Compound_ID'].nunique().reset_index(name= "l
 * 分组计算平均值
 ```py
 df_iv_sel.groupby('Compound_ID')['Expression over 9001'].mean().reset_index(name = 'Expression over 9001(mean)')
+
 ```
