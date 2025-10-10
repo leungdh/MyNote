@@ -1,0 +1,3 @@
+```py
+df.astype(float)
+```
