@@ -1,0 +1,5 @@
+
+* ref
+  * https://zhuanlan.zhihu.com/p/142935881
+  * https://www.jianshu.com/p/cec9f339e326
+  * https://www.rdkit.org/docs/source/rdkit.Chem.rdmolops.html#rdkit.Chem.rdmolops.ReplaceSubstructs
