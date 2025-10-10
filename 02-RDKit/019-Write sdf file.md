@@ -1,3 +1,4 @@
+# Write sdf 写sdf格式的分子
 
 每个写进一个sdf
 ```py
@@ -20,5 +21,6 @@ for i, smi in enumerate(smi_series):
         f.write(molblock)
         f.write('\n$$$$\n')
 ```
+
 
 * ref: https://www.jianshu.com/p/c0df2942d8d1
