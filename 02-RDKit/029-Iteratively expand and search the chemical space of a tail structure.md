@@ -1,9 +1,8 @@
 # Iteratively expand and search the chemical space of a tail structure递归在尾部骨架生成完整尾部
-This script was being written and used when I was assigned to explore the chemical space of certain tails. 
-By defining tail structure and use this script, it will eventually give different tail length combinations of the origin tail structure, \
-with names like "TailA_CxCyCz". TailA is the name of the origin tail structure. CxCyCz means TailA has 3 subtails and x, y, z are lengths of each subtail. 
-The subtail length can be defined with tail_ranges.  
-It is a fast and convenient way to expand chemical space of a tail structure.
+* This script was being written and used when I was assigned to explore the chemical space of certain tails.
+* By defining tail structure and use this script, it will eventually give different tail length combinations of the origin tail structure, with names like "TailA_CxCyCz". TailA is the name of the origin tail structure. CxCyCz means TailA has 3 subtails and x, y, z are lengths of each subtail.
+* The subtail length can be defined with tail_ranges.
+* It is a fast and convenient way to expand chemical space of a tail structure.
 
 ```py
 cstring = 'CCCCCCCCCCC'
@@ -39,3 +38,4 @@ tail_df.reset_index(inplace = True)
 tail_df.rename(columns = {"index":"Tail_ID"},inplace = True)
 
 ```
+
