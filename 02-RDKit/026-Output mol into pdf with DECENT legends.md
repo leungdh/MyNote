@@ -1,3 +1,5 @@
+Output mol into pdf with DECENT legends 画图打印legend并保存pdf
+
 ```py
 from rdkit.Chem import Draw
 
@@ -9,4 +11,5 @@ img = Draw.MolsToGridImage([Chem.MolFromSmiles(smi)for smi in df['Whole.SMILES']
                                 for index, row in df.iterrows()])
 display(img)  
 img.save('myfig.png')  
+
 ```
