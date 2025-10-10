@@ -1,5 +1,8 @@
+Modify atom element 修改原子类型
+
 ```py
 # 修改原子类型
 mol_modified.ReplaceAtom(atom_id,Chem.AtomFromSmiles("C"))
 mol_modified.ReplaceAtom(new_atom_id,Chem.AtomFromSmiles("*"))
+
 ```
