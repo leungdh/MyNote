@@ -6,6 +6,7 @@ df.groupby(['target','dose(mpk)'])['Compound_ID'].nunique().reset_index(name= "l
 
 * 分组计算平均值
 ```py
-df_iv_sel.groupby('Compound_ID')['Expression over 9001'].mean().reset_index(name = 'Expression over 9001(mean)')
+df_iv_sel.groupby('Compound_ID')['Expression over benchmark'].mean().reset_index(name = 'Expression over benchmark(mean)')
 
 ```
+
