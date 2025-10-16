@@ -167,7 +167,7 @@ for subgroup in df_dict.keys():
     # plt.savefig("grid_violin_plot.png", dpi=300)
     plt.show()
 
-    ```
+```
 
 ### Example 4
 ```py
@@ -197,3 +197,4 @@ for idx in range(len(df_lipid5_mc3.iloc[2:,].groupby('制剂订单编号')), n_r
 plt.tight_layout()
 plt.show()
 ```
+
