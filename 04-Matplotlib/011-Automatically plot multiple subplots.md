@@ -166,4 +166,34 @@ for subgroup in df_dict.keys():
     plt.tight_layout()
     # plt.savefig("grid_violin_plot.png", dpi=300)
     plt.show()
+
     ```
+
+### Example 4
+```py
+n_rows, n_cols = 2, 4
+fig,axes = plt.subplots(n_rows, n_cols, figsize = (15,6))
+
+for idx, (num1, df_temp1) in enumerate(df_lipid5_mc3.iloc[2:,].groupby('制剂订单编号')):
+
+    # 计算子图位置
+    row, col = divmod(idx, n_cols)
+    ax = axes[row, col]
+    
+#     plt.figure(figsize=(4,3),dpi=120)
+    for lipid, df_temp2 in df_temp1.groupby('Compound_ID'):
+        ax.plot([1,2],df_temp2['IL-6 pg/ml'],label = lipid,marker = 'o')
+    ax.set_xticks([1,2],df_temp1['生物活性订单编号'].unique().tolist())
+    ax.set_title(num1)
+    ax.set_ylabel('IL-6 pg/mL')
+    ax.legend()
+    ax.set_ylim([0,240])
+
+# 移除多余的子图框架
+for idx in range(len(df_lipid5_mc3.iloc[2:,].groupby('制剂订单编号')), n_rows * n_cols):
+    row, col = divmod(idx, n_cols)
+    axes[row, col].axis('off')    
+
+plt.tight_layout()
+plt.show()
+```
